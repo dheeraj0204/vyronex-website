@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { Instagram, Linkedin, ChevronDown } from "lucide-react";
 
 const words = ["everything", "workflows", "the rest", "your day"];
 
@@ -107,6 +108,7 @@ function BlurWord({ word, trigger }: { word: string; trigger: number }) {
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
+  const [showSocials, setShowSocials] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -168,13 +170,41 @@ export function HeroSection() {
         <div className="lg:max-w-[55%]">
         {/* Founder Tag */}
         <div
-          className={`mb-4 transition-all duration-700 delay-75 ${
+          className={`mb-4 relative inline-block transition-all duration-700 delay-75 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-white/5 text-xs font-medium text-white/90 animate-pulse backdrop-blur-sm">
+          <button
+            onClick={() => setShowSocials(!showSocials)}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 text-sm md:text-base font-medium text-white/90 hover:bg-white/10 transition-colors backdrop-blur-sm cursor-pointer"
+          >
             Founder — Dheeraj Khetwal
-          </span>
+            <ChevronDown className={`w-4 h-4 transition-transform ${showSocials ? "rotate-180" : ""}`} />
+          </button>
+          
+          {/* Socials Dropdown */}
+          <div 
+            className={`absolute top-full left-0 mt-2 p-1.5 rounded-2xl border border-white/10 bg-black/80 backdrop-blur-md flex gap-1 transition-all duration-300 origin-top ${
+              showSocials ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
+            }`}
+          >
+            <a 
+              href="https://www.instagram.com/dakxh_407" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2.5 rounded-xl hover:bg-white/10 transition-colors text-white/70 hover:text-white"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/dheeraj-khetwal-69323b307/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2.5 rounded-xl hover:bg-white/10 transition-colors text-white/70 hover:text-white"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+          </div>
         </div>
 
         {/* Eyebrow */}
