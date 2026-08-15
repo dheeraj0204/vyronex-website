@@ -166,15 +166,26 @@ export function HeroSection() {
       
       <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 py-32 lg:py-40">
         <div className="lg:max-w-[55%]">
+        {/* Founder Tag */}
+        <div
+          className={`mb-4 transition-all duration-700 delay-75 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          }`}
+        >
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-white/5 text-xs font-medium text-white/90 animate-pulse backdrop-blur-sm">
+            Founder — Dheeraj Khetwal
+          </span>
+        </div>
+
         {/* Eyebrow */}
         <div 
           className={`mb-8 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <span className="inline-flex items-center gap-3 text-sm font-mono text-white/60">
-            <span className="w-8 h-px bg-white/30" />
-            AI • AUTOMATION • DIGITAL SYSTEMS
+          <span className="inline-flex items-center gap-3 text-sm font-mono text-white/60 flex-wrap">
+            <span className="w-8 h-px bg-white/30 hidden sm:block" />
+            AI • AUTOMATION • DIGITAL SYSTEMS • VOICE AGENTS • WORKFLOW AUTOMATION • AI SAAS
           </span>
         </div>
         
