@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { Instagram, Linkedin, ChevronDown } from "lucide-react";
+import { Instagram, ChevronDown } from "lucide-react";
 
 const words = ["everything", "workflows", "the rest", "your day"];
 
@@ -195,14 +195,6 @@ export function HeroSection() {
               className="p-2.5 rounded-xl hover:bg-white/10 transition-colors text-white/70 hover:text-white"
             >
               <Instagram className="w-5 h-5" />
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/dheeraj-khetwal-69323b307/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-2.5 rounded-xl hover:bg-white/10 transition-colors text-white/70 hover:text-white"
-            >
-              <Linkedin className="w-5 h-5" />
             </a>
           </div>
         </div>
