@@ -170,7 +170,7 @@ export function HeroSection() {
         <div className="lg:max-w-[55%]">
         {/* Founder Tag */}
         <div
-          className={`mb-4 relative inline-block transition-all duration-700 delay-75 ${
+          className={`mb-4 relative z-50 inline-block transition-all duration-700 delay-75 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
