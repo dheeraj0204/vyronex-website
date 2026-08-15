@@ -70,7 +70,7 @@ export function DevelopersSection() {
             <span className="w-8 h-px bg-foreground/30" />
             Digital & software
           </span>
-          <h2 className="text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9]">
+          <h2 className="text-5xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9]">
             Websites, apps
             <br />
             <span className="text-muted-foreground">& software.</span>

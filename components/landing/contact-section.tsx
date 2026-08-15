@@ -91,7 +91,7 @@ export function ContactSection() {
             Start a project
           </span>
           <h2
-            className={`text-5xl md:text-6xl lg:text-[96px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
+            className={`text-4xl md:text-6xl lg:text-[96px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >

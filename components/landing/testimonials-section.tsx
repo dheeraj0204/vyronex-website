@@ -164,7 +164,7 @@ export function TestimonialsSection() {
               key={`metric-${activeIndex}`}
               className="p-10 border border-background/20 bg-background/5 animate-fadeSlideIn"
             >
-              <span className="text-7xl lg:text-8xl font-display block mb-4">
+              <span className="text-6xl md:text-7xl lg:text-8xl font-display block mb-4">
                 {activeTestimonial.metric.value}
               </span>
               <span className="text-lg text-background/60">

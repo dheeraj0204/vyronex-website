@@ -50,7 +50,7 @@ export function CtaSection() {
             <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
               {/* Left content */}
               <div className="flex-1">
-                <h2 className="text-6xl md:text-7xl lg:text-[72px] font-display tracking-tight mb-8 leading-[0.95]">
+                <h2 className="text-5xl md:text-7xl lg:text-[72px] font-display tracking-tight mb-8 leading-[0.95]">
                   Have a task?
                   <br />
                   Let&apos;s automate it.

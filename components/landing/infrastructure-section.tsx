@@ -61,7 +61,7 @@ export function InfrastructureSection() {
 
             {/* Titre + description empilés */}
             <div className="flex flex-col justify-center">
-              <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
+              <h2 className={`text-5xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}>
                 AI that works
@@ -144,7 +144,7 @@ export function InfrastructureSection() {
             
             <div className="relative z-10">
               <div className="flex items-baseline gap-3 mb-4">
-                <span className="text-7xl lg:text-[8rem] font-display leading-none">AI</span>
+                <span className="text-6xl md:text-7xl lg:text-[8rem] font-display leading-none">AI</span>
                 <span className="text-2xl text-muted-foreground">systems</span>
               </div>
               <p className="text-muted-foreground max-w-md">
